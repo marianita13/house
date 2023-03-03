@@ -15,7 +15,8 @@ async function encontrar(){
     console.log(name);
     const respuesta=await fetch(url+name)
     const datos=await respuesta.json()
-    const imagen=datos.image.url
+    const imagen=datos.results[0].image.url
+    console.log(imagen);
     let superhero=document.getElementById('superhero')
     superhero.innerHTML=`<img src=${imagen}>`
 }
