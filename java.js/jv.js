@@ -114,7 +114,8 @@ function mes(){
     9. Septiembre
     10. Octubre
     11. Noviembre
-    12. Diciembre`)
+    12. Diciembre
+    13`)
     switch(opciones){
         case 1:
             let month=personas.filter(i=>i.fecha==01).map(el=>el.nombre)
