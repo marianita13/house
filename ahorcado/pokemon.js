@@ -15,28 +15,10 @@ async function encontrar(){
     console.log(name);
     const respuesta=await fetch(url+name)
     const datos=await respuesta.json()
-    const imagen=datos.results[0].image.url
-    console.log(imagen);
     let superhero=document.getElementById('superhero')
-    superhero.innerHTML=`<img src=${imagen}>`
+    for (i=0;i<6;i++){
+        let imagen=datos.results[i].image.url
+        console.log(imagen);
+        superhero.innerHTML=`<img src=${imagen}>`
+    }
 }
-
-// const url = 'https://gateway.marvel.com/'
-
-// async function conseguir(){
-//     const fecha = new Date()
-//     const respuesta= await fetch('https://gateway.marvel.com:443/v1/public/characters?apikey=95416e15ca0dc02c4ef450b15ce7d473', {
-//         method: 'GET',
-//         headers: {
-//             "Accept": "*/*" 
-//         }
-//     })
-//     const datos= await respuesta.json()
-//     console.log(datos);
-//     // const foto=datos.sprites.front_default
-//     // let pokemon=document.getElementById('pokemon')
-//     // pokemon.innerHTML=`<img src=${foto}>`
-// }
-
-
-// conseguir()
