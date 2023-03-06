@@ -61,17 +61,41 @@ div{
     width: 30px;
 } */
 
+* {
+    margin: auto;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#titulo{
+    width: 50%;
+}
+
 h2{
-    border: 20px black;
-    padding-left: 300px;
+    width: 50%;
+    font-size:200%;
 }
 
 p{
-    padding-left: 300px;
-    width: 535px;
+    width: 50%;
+    text-align:initial;
+
+
 }
 
-img{
-    width: 8%;
+.imagenes{
+    text-align: center;
+    word-spacing: 30px;
+}
 
+.botton{
+    background-color: yellow;
+    border:ridge orange;
+    margin: 20px 500px;
+    text-align: center;
+}
+
+.image{
+    margin: auto;
+    text-align: center;
 }
